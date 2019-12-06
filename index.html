@@ -9,14 +9,20 @@
     <meta name="og:image" content="src/img/icon.jpg" />
     <meta name="og:description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="shortcut icon" href="src/img/icon.jpg" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/icon180.png">
     <link rel="stylesheet" href="src/css/styles.css">
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
   </head>
+  <body class="bg-white min-height-full" id="body-preloader">
 
-  <body class="bg-white min-height-full">
+    <div id="main-preloader">
+      <img src="src/img/lightning.png" alt="">
+      <span class="typer" id="main" data-words="ilsur_dev,loading" data-delay="120" data-deleteDelay="5000"></span>
+    </div>
+
     <div class="d-md-flex min-height-full border-bd-bottom">
-
       <div class="flex-self-stretch border-md-right border-gray-light bg-white col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
         <img src="https://avatars0.githubusercontent.com/u/51150304?v=4" class="circle mb-3" style="max-width: 150px;" alt="Аватарка">
         <h1 class="mb-2 lh-condensed">Ильсур Гильмутдинов</h1>
@@ -151,6 +157,14 @@
           <div class="d-flex flex-wrap gutter-condensed mb-4">
 
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
+              <a href="https://yandexlyceum.ru/" class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
+                <img src="src/img/lyceum.png" height="65" class="mx-auto rounded-1 mb-3" alt=CSS>
+                <p class="f4 lh-condensed text-center text-gray mb-0 mt-1">Учащийся<br/>Яндекс.Лицея</p>
+                <p class="f5 lh-condensed text-center text-gray mb-0 mt-1"><br>Октябрь 2019 » Current</p>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
               <a href="https://stepik.org/cert/187730" class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
                 <img src="https://i.stack.imgur.com/lq7iV.png" width="96" height="65" class="mx-auto rounded-1 mb-3" alt=CSS>
                 <p class="f4 lh-condensed text-center text-gray mb-0 mt-1">Завершил курс<br/>«Программирование на Python»</p>
@@ -163,14 +177,6 @@
                 <img src="https://i.stack.imgur.com/mWgLZ.jpg" width="96" height="70" class="mx-auto rounded-1 mb-3" alt=CSS>
                 <p class="f4 lh-condensed text-center text-gray mb-0 mt-1">Окончил интенсив<br/>«Обучение веб-разработке»</p>
                 <p class="f5 lh-condensed text-center text-gray mb-0 mt-1"><br>Январь 2018</p>
-              </a>
-            </div>
-
-            <div class="col-12 col-md-12 col-lg-6 col-xl-6 mb-3">
-              <a href="https://i.stack.imgur.com/sshOW.jpg" class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
-                <img src="https://i.stack.imgur.com/sshOW.jpg" width="96" height="65" class="mx-auto rounded-1 mb-3" alt=CSS>
-                <p class="f4 lh-condensed text-center text-gray mb-0 mt-1">Участие в акции<br/>«Час кода»</p>
-                <p class="f5 lh-condensed text-center text-gray mb-0 mt-1"><br>Ноябрь 2017</p>
               </a>
             </div>
 
@@ -251,6 +257,19 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/55885033" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <script>
+      document.body.onload = function () {
+        setTimeout(function () {
+          let preloader = document.getElementById("main-preloader");
+          let body = document.getElementById("body-preloader");
+          if (!preloader.classList.contains("done1")) {
+            preloader.classList.add("done1");
+            body.classList.add("done2");
+          }
+        }, 1900);
+      }
+    </script>
   <body>
 
 </html>

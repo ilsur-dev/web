@@ -1,0 +1,48 @@
+body {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+#main-preloader {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 1s, visibility 1.2s;
+}
+
+#main-preloader > span {
+    letter-spacing: 2px;
+    font-family: Hacked;
+    font-size: 9vh;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.9);
+    text-stroke: 1px white;
+}
+
+#main-preloader > img {
+    max-width: 85%;
+    max-height: 80%;
+    position: absolute;
+    opacity: 0.15;
+}
+
+.done1 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.done2 {
+    overflow-y: visible;
+}
