@@ -38,6 +38,18 @@ body {
     opacity: 0.15;
 }
 
+#main-avatar {
+    max-width: 150px;
+}
+
+#main-classbattle-link {
+  background: #319cff !important;
+}
+
+#main-classbattle-img {
+  margin-top: 16px !important;
+}
+
 .done1 {
     opacity: 0;
     visibility: hidden;
