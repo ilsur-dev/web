@@ -46,8 +46,13 @@ body {
   background: #319cff !important;
 }
 
-#main-classbattle-img {
+.main-margin-top {
   margin-top: 16px !important;
+}
+
+.main-books {
+  padding: 0 !important;
+  
 }
 
 .done1 {
