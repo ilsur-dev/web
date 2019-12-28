@@ -52,7 +52,7 @@ body {
 
 .main-books {
   padding: 0 !important;
-  
+
 }
 
 .done1 {
@@ -62,4 +62,15 @@ body {
 
 .done2 {
     overflow-y: visible;
+}
+
+
+@media (min-width: 768px) {
+  .px-md-6 {
+      position: sticky !important;
+      top: 0 !important;
+      height: 100vh !important;
+      padding-right: 40px !important;
+      padding-left: 40px !important;
+  }
 }
